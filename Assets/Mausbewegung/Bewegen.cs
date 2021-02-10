@@ -13,7 +13,7 @@ public class Bewegen : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        RaycastHit hit;
+        /*RaycastHit hit;
 
         if (Input.GetButton("fire1"))
         {
@@ -58,6 +58,6 @@ public class Bewegen : MonoBehaviour
                 privot.transform.position = h.point;
 
             }
-        }
+        }*/
     }
 }
