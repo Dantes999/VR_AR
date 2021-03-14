@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Fische : MonoBehaviour {
+public class Fischex : MonoBehaviour {
 
     public LevelManager levelManager;
     public Vector3 startPos;
@@ -15,14 +15,16 @@ public class Fische : MonoBehaviour {
     void Start(){
         levelManager = FindObjectOfType<LevelManager>();
         startPos = transform.position;
-        newPos = startPos;
+        
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        newPos.z = newPos.z + Mathf.PingPong(Time.time, 6) - 3;
+        newPos = startPos;
+        newPos.x = newPos.x + Mathf.PingPong(Time.time, 6) -3;
+        
         transform.position = newPos;
 
     }
