@@ -543,11 +543,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 5b6194af50e0a2444a137f5020da7290,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream:Assets/Scenes/AquaVR.unity
-      value: 7
-=======
       value: 12
->>>>>>> Stashed changes:Assets/Scenes/New Scene.unity
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 5b6194af50e0a2444a137f5020da7290,
         type: 3}
@@ -920,10 +916,6 @@ Transform:
   m_LocalPosition: {x: 38.457294, y: 57.25772, z: -81.14336}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-<<<<<<< Updated upstream:Assets/Scenes/AquaVR.unity
-  m_Father: {fileID: 1231816318}
-  m_RootOrder: 2
-=======
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1132,7 +1124,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 19
->>>>>>> Stashed changes:Assets/Scenes/New Scene.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &498476488
 PrefabInstance:
@@ -1386,11 +1377,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: de6490926994d9d4088332d9e8472418,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream:Assets/Scenes/AquaVR.unity
-      value: 9
-=======
       value: 15
->>>>>>> Stashed changes:Assets/Scenes/New Scene.unity
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de6490926994d9d4088332d9e8472418,
         type: 3}
@@ -2313,11 +2300,7 @@ Transform:
   - {fileID: 528193993}
   - {fileID: 1077213634}
   m_Father: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Scenes/AquaVR.unity
-  m_RootOrder: 10
-=======
   m_RootOrder: 17
->>>>>>> Stashed changes:Assets/Scenes/New Scene.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1182981810
 PrefabInstance:
@@ -2364,11 +2347,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 2a27d18ad2167534d8f77194ba1a144f,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream:Assets/Scenes/AquaVR.unity
-      value: 4
-=======
       value: 6
->>>>>>> Stashed changes:Assets/Scenes/New Scene.unity
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a27d18ad2167534d8f77194ba1a144f,
         type: 3}
@@ -2573,13 +2552,8 @@ Transform:
   m_LocalPosition: {x: 38.457294, y: 57.25772, z: -73.00336}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-<<<<<<< Updated upstream:Assets/Scenes/AquaVR.unity
-  m_Father: {fileID: 1231816318}
-  m_RootOrder: 0
-=======
   m_Father: {fileID: 0}
   m_RootOrder: 7
->>>>>>> Stashed changes:Assets/Scenes/New Scene.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1274679303
 PrefabInstance:
@@ -2924,13 +2898,8 @@ Transform:
   m_LocalPosition: {x: 30.157293, y: 57.25772, z: -72.923355}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-<<<<<<< Updated upstream:Assets/Scenes/AquaVR.unity
-  m_Father: {fileID: 1231816318}
-  m_RootOrder: 1
-=======
   m_Father: {fileID: 0}
   m_RootOrder: 9
->>>>>>> Stashed changes:Assets/Scenes/New Scene.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1724004575
 GameObject:
@@ -3336,11 +3305,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: de6490926994d9d4088332d9e8472418,
         type: 3}
       propertyPath: m_RootOrder
-<<<<<<< Updated upstream:Assets/Scenes/AquaVR.unity
-      value: 8
-=======
       value: 14
->>>>>>> Stashed changes:Assets/Scenes/New Scene.unity
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: de6490926994d9d4088332d9e8472418,
         type: 3}
@@ -3530,13 +3495,8 @@ Transform:
   m_LocalPosition: {x: 30.157293, y: 57.25772, z: -81.063354}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-<<<<<<< Updated upstream:Assets/Scenes/AquaVR.unity
-  m_Father: {fileID: 1231816318}
-  m_RootOrder: 3
-=======
   m_Father: {fileID: 0}
   m_RootOrder: 13
->>>>>>> Stashed changes:Assets/Scenes/New Scene.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &2097987810
 MonoBehaviour:
