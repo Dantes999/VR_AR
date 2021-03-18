@@ -33,7 +33,8 @@ public class Fischex : MonoBehaviour
         }
         if (buttonPressed == true)
         {
-            Fische.transform.position = Vector3.Lerp(Fische.transform.position, pos2, 3 * Time.deltaTime);
+            if(Fische)
+                Fische.transform.position = Vector3.Lerp(Fische.transform.position, pos2, 3 * Time.deltaTime);
             //Fische.transform.rotation = Quaternion.Lerp(Fische.transform.position, Quaternion.Euler(rot2), 3 * Time.deltaTime); 
         }
 
