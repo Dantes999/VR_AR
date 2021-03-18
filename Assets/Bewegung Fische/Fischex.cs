@@ -5,27 +5,37 @@ using UnityEngine.SceneManagement;
 
 public class Fischex : MonoBehaviour {
 
-    public LevelManager levelManager;
-    public Vector3 startPos;
-    public Vector3 newPos;
+   
+    public GameObject Fische;
+    bool buttonPressed;
 
+    Vector3 pos2;
+    Vector3 rot2;
 
 
     // Start is called before the first frame update
     void Start(){
-        levelManager = FindObjectOfType<LevelManager>();
-        startPos = transform.position;
-        
+       
+        pos2 = new Vector3(11, 1, 11);
+        //rot2 = new Vector3(-90, 90, 0);
+        //buttonPressed = false;
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        newPos = startPos;
-        newPos.x = newPos.x + Mathf.PingPong(Time.time, 6) -3;
-        
-        transform.position = newPos;
+        //if (Input.GetKeyDown("f"))
+        //{
+          //  buttonPressed = true;
+        //}
+        //if (buttonPressed == true)
+        //{
+            Fische.transform.position = Vector3.Lerp(Fische.transform.position, pos2, 3 * Time.deltaTime);
+            //Fische.transform.rotation = Quaternion.Lerp(Fische.transform.position, Quaternion.Euler(rot2), 3 * Time.deltaTime); 
+        //}
+
+
 
     }
     
