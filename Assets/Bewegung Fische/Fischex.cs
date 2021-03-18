@@ -10,8 +10,17 @@ public class Fischex : MonoBehaviour
     public GameObject Fische;
     bool buttonPressed;
 
+
     Vector3 pos2;
+    Vector3 pos3;
+    Vector3 pos4;
+    Vector3 pos5;
     Vector3 rot2;
+
+    int a;
+    int b;
+    int c;
+    int d;
 
 
     // Start is called before the first frame update
@@ -19,8 +28,14 @@ public class Fischex : MonoBehaviour
     {
 
         pos2 = new Vector3(11, 1, 11);
+        pos3 = new Vector3(11, -14, -3);
+        pos4 = new Vector3(-10, -14, -3);
+        pos5 = new Vector3(-10, -14, 18);
         //rot2 = new Vector3(-90, 90, 0);
         buttonPressed = false;
+
+
+
 
     }
 
@@ -31,13 +46,45 @@ public class Fischex : MonoBehaviour
         {
             buttonPressed = true;
         }
-        if (buttonPressed == true)
+        if (buttonPressed == true && a < 100)
         {
-            if(Fische)
-                Fische.transform.position = Vector3.Lerp(Fische.transform.position, pos2, 3 * Time.deltaTime);
-            //Fische.transform.rotation = Quaternion.Lerp(Fische.transform.position, Quaternion.Euler(rot2), 3 * Time.deltaTime); 
+
+            Fische.transform.position = Vector3.Lerp(Fische.transform.position, pos2, 3 * Time.deltaTime);
+            a++;
+
+            //Fische.transform.rotation = Quaternion.Lerp(Fische.transform.position, Quaternion.Euler(rot2), 3 * Time.deltaTime);
+
         }
+        else if (buttonPressed == true && b < 100)
+        {
+            Fische.transform.position = Vector3.Lerp(Fische.transform.position, pos3, 3 * Time.deltaTime);
+            b++;
+        }
+        else if (buttonPressed == true && c < 100)
+        {
+            Fische.transform.position = Vector3.Lerp(Fische.transform.position, pos4, 3 * Time.deltaTime);
+            c++;
+        }
+        else if (buttonPressed == true && d < 100)
+        {
+            Fische.transform.position = Vector3.Lerp(Fische.transform.position, pos5, 3 * Time.deltaTime);
+            d++;
+
+        }
+        else
+        {
+            a = 0;
+            b = 0;
+            c = 0;
+            d = 0;
+        }
+
+
+
 
     }
 
 }
+
+
+
