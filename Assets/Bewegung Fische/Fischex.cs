@@ -27,10 +27,10 @@ public class Fischex : MonoBehaviour
     void Start()
     {
 
-        pos2 = new Vector3(11, 1, 11);
-        pos3 = new Vector3(11, -14, 11);
-        pos4 = new Vector3(-10, -14, 11);
-        pos5 = new Vector3(-10, -14, 11);
+        pos2 = new Vector3(-14, 2, 10);
+        pos3 = new Vector3(14, 2, -10);
+        pos4 = new Vector3(-10, 2, -10);
+        pos5 = new Vector3(-12, 2, 10);
         //rot2 = new Vector3(-90, 90, 0);
         buttonPressed = false;
 
