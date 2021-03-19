@@ -1329,9 +1329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d95914c13338f04418b9160e8d63d35b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelManager: {fileID: 0}
-  startPos: {x: 0, y: 0, z: 0}
-  newPos: {x: 0, y: 0, z: 0}
+  Fische: {fileID: 550456671}
 --- !u!1001 &589687947
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1792,7 +1790,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!81 &900167867
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1800,7 +1798,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900167866}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &900167868
 Camera:
   m_ObjectHideFlags: 0
@@ -1808,7 +1806,7 @@ Camera:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900167866}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
@@ -1865,7 +1863,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 900167866}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d3266399b04a9b49bb51c14245ebe2a, type: 3}
   m_Name: 
