@@ -4,43 +4,54 @@ using UnityEngine;
 
 public class flock : MonoBehaviour
 {
-    public float speed = 0.5f;
-    float rotationSpeed = 4.0f;
+
+    public float speed = 0.001f;
+    float rotationSpeed = 5.0f;
+    float minSpeed = 0.8f;
+    float maxSpeed = 2.0f;
     Vector3 averageHeading;
     Vector3 averagePosition;
-    float neighbourDistance = 2.0f;
-
-    bool turning = false;
+    float neighbourDistance = 3.0f;
+    public Vector3 newGoalPos;
+    public bool turning = false;
 
     // Start is called before the first frame update
     void Start()
     {
-        speed = Random.Range(0.5f, 1);
+        speed = Random.Range(minSpeed, maxSpeed);
+    }
+
+    void OnTriggerEnter(Collider other)
+    {
+        if (!turning)
+        {
+            newGoalPos = this.transform.position - other.gameObject.transform.position;
+        }
+        turning = true;
+
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        turning = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Vector3.Distance(transform.position, Vector3.zero) >= globalflock.tankSize)
-        {
-            turning = true;
-        }
-        else
-            turning = false;
         if (turning)
         {
-            Vector3 direction = Vector3.zero - transform.position;
+            Vector3 direction = newGoalPos - transform.position;
             transform.rotation = Quaternion.Slerp(transform.rotation,
-                                                    Quaternion.LookRotation(direction),
-                                                    rotationSpeed * Time.deltaTime);
-            speed = Random.Range(0.5f, 1);
+                                                   Quaternion.LookRotation(direction),
+                                                   rotationSpeed * Time.deltaTime);
+            speed = Random.Range(minSpeed, maxSpeed);
         }
         else
         {
-            if (Random.Range(0, 5) < 1)
+            if (Random.Range(0, 10) < 1)
                 ApplyRules();
         }
-
         transform.Translate(0, 0, Time.deltaTime * speed);
     }
 
@@ -48,15 +59,12 @@ public class flock : MonoBehaviour
     {
         GameObject[] gos;
         gos = globalflock.allFish;
-
         Vector3 vcentre = Vector3.zero;
         Vector3 vavoid = Vector3.zero;
         float gSpeed = 0.1f;
-
         Vector3 goalPos = globalflock.goalPos;
 
         float dist;
-
         int groupSize = 0;
         foreach (GameObject go in gos)
         {
@@ -68,7 +76,7 @@ public class flock : MonoBehaviour
                     vcentre += go.transform.position;
                     groupSize++;
 
-                    if (dist < 1.0f)
+                    if (dist < 2.0f)
                     {
                         vavoid = vavoid + (this.transform.position - go.transform.position);
                     }
@@ -77,7 +85,6 @@ public class flock : MonoBehaviour
                 }
             }
         }
-
         if (groupSize > 0)
         {
             vcentre = vcentre / groupSize + (goalPos - this.transform.position);
@@ -86,9 +93,9 @@ public class flock : MonoBehaviour
             Vector3 direction = (vcentre + vavoid) - transform.position;
             if (direction != Vector3.zero)
                 transform.rotation = Quaternion.Slerp(transform.rotation,
-                                                      Quaternion.LookRotation(direction),
-                                                      rotationSpeed * Time.deltaTime);
+                                                       Quaternion.LookRotation(direction),
+                                                       rotationSpeed * Time.deltaTime);
         }
-
     }
+
 }
