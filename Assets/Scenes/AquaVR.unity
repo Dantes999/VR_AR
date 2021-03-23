@@ -19650,7 +19650,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 949270578660237045, guid: 293627cca1dfd9c438fd8e111153c3ec,
     type: 3}
-  goalPrefab: {fileID: 1961944606}
 --- !u!4 &1213780714
 Transform:
   m_ObjectHideFlags: 0
@@ -19659,7 +19658,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1213780712}
   m_LocalRotation: {x: -0, y: 0.2754696, z: -0, w: 0.9613098}
-  m_LocalPosition: {x: 17.566257, y: 3.184693, z: -4.7198095}
+  m_LocalPosition: {x: 23.921738, y: 2.184693, z: 5.4589863}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 196837147}
@@ -27942,7 +27941,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fishPrefab: {fileID: 6851907328849961044, guid: 01893bc0d75f7884a99d262343fed31f,
     type: 3}
-  goalPrefab: {fileID: 1789846000}
 --- !u!4 &1894196961
 Transform:
   m_ObjectHideFlags: 0
@@ -27951,7 +27949,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894196959}
   m_LocalRotation: {x: -0, y: 0.2754696, z: -0, w: 0.9613098}
-  m_LocalPosition: {x: 17.566257, y: 3.184693, z: -4.7198095}
+  m_LocalPosition: {x: 9.621908, y: 3.184693, z: -17.443306}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 196837147}
@@ -31559,17 +31557,17 @@ PrefabInstance:
     - target: {fileID: 6851907328849542260, guid: 01893bc0d75f7884a99d262343fed31f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.393883
+      value: 4.277458
       objectReference: {fileID: 0}
     - target: {fileID: 6851907328849542260, guid: 01893bc0d75f7884a99d262343fed31f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.6913736
+      value: -2.8153067
       objectReference: {fileID: 0}
     - target: {fileID: 6851907328849542260, guid: 01893bc0d75f7884a99d262343fed31f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -22.848764
+      value: -12.785925
       objectReference: {fileID: 0}
     - target: {fileID: 6851907328849542260, guid: 01893bc0d75f7884a99d262343fed31f,
         type: 3}
@@ -31634,17 +31632,17 @@ PrefabInstance:
     - target: {fileID: 461526754468922447, guid: 293627cca1dfd9c438fd8e111153c3ec,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.958071
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 461526754468922447, guid: 293627cca1dfd9c438fd8e111153c3ec,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.09013438
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 461526754468922447, guid: 293627cca1dfd9c438fd8e111153c3ec,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -18.207735
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 461526754468922447, guid: 293627cca1dfd9c438fd8e111153c3ec,
         type: 3}
@@ -31685,6 +31683,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Animierter Fisch 2 mit neuem Blender
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910795162578681353, guid: 293627cca1dfd9c438fd8e111153c3ec,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910795162578681353, guid: 293627cca1dfd9c438fd8e111153c3ec,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7910795162578681353, guid: 293627cca1dfd9c438fd8e111153c3ec,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 293627cca1dfd9c438fd8e111153c3ec, type: 3}

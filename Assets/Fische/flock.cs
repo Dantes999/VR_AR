@@ -52,7 +52,7 @@ public class flock : MonoBehaviour
             if (Random.Range(0, 10) < 1)
                 ApplyRules();
         }
-        transform.Translate(0, 0, Time.deltaTime * speed);
+        transform.Translate(21, 1, Time.deltaTime * speed);
     }
 
     void ApplyRules()

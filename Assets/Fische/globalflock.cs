@@ -6,9 +6,9 @@ public class globalflock : MonoBehaviour
 {
     public GameObject fishPrefab;
     public static int tankSize = 5;
-    public GameObject goalPrefab;
+    
 
-    static int numFish = 10;
+    static int numFish = 50;
     public static GameObject[] allFish = new GameObject[numFish];
 
     public static Vector3 goalPos = Vector3.zero;
@@ -32,10 +32,10 @@ public class globalflock : MonoBehaviour
     {
         if (Random.Range(0, 10000) < 50)
         {
-            /*goalPos = new Vector3(Random.Range(-tankSize, tankSize),
+            goalPos = new Vector3(Random.Range(-tankSize, tankSize),
                                   Random.Range(-tankSize, tankSize),
-                                  Random.Range(-tankSize, tankSize));*/
-            goalPrefab.transform.position = goalPos;
+                                  Random.Range(-tankSize, tankSize));
+           //goalPrefab.transform.position = goalPos;
         }
     }
 }
