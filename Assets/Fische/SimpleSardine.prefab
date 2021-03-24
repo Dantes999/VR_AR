@@ -515,7 +515,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6851907328849542260}
   - component: {fileID: 6851907328840438748}
-  - component: {fileID: 2917855486110553532}
   - component: {fileID: -7116213933752341761}
   - component: {fileID: -3299316762904875006}
   m_Layer: 0
@@ -560,21 +559,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &2917855486110553532
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6851907328849961044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d9e330a1c3981a44895cd820bc256a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.5
-  newGoalPos: {x: 0, y: 0, z: 0}
-  turning: 0
 --- !u!54 &-7116213933752341761
 Rigidbody:
   m_ObjectHideFlags: 0
