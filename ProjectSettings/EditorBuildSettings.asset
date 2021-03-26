@@ -12,5 +12,17 @@ EditorBuildSettings:
     path: Assets/Scenes/AquaVR.unity
     guid: 0ff8924f5373a72429c22f035791413a
   m_configObjects:
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: d2cb705fb469b3e4684fb41fe48e7c2c,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 60718a20b8ca4c740b304336be2daa1e,
+      type: 2}
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: ebfaaa755d11eb74c8b1dcb991634ffc,
+      type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: de0d7356a1780764b856bad8ba20272b,
+      type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
+      guid: b369245c657925740b01f9f7131feec8, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
+      guid: 334a38599c723ac4baa486cd09839122, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: f4eb34cd99e0e1b40bc4a89d0a8d2f5b,
+      type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: e08fa3945c3f7464891783131fa4d864,
       type: 2}
