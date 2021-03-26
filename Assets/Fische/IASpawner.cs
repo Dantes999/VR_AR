@@ -161,14 +161,16 @@ public class IASpawner : MonoBehaviour
 
     void GetWaypoints()
     {
+        
         Transform[] wpList = this.transform.GetComponentsInChildren<Transform>();
-        for (int i = 0; i < wpList.Length; i++)
+        for (int j = 0; j < wpList.Length; j++)
         {
-            if (wpList[i].tag == "Waypoint")
+            if (wpList[j].tag == "Waypoint")
             {
-                Waypoints.Add(wpList[i]);
+                Waypoints.Add(wpList[j]);
             }
         }
+ 
 
     }
 
